@@ -1,7 +1,7 @@
 {
-  "name": "sb2w-website",
+  "name": "react-redux-boilerplate",
   "version": "0.0.1",
-  "description": "Aplicação client do site blindado",
+  "description": "React Redux projects",
   "scripts": {
     "start": "npm run dev",
     "dev": "node -r babel-register ./node_modules/.bin/webpack-dev-server --config ./webpack/dev.js --watch --colors",
