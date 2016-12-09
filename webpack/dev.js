@@ -10,9 +10,7 @@ const config = {
 
     entry: [
         'react-hot-loader/patch',
-        //'webpack-hot-middleware/client',
         'webpack-dev-server/client?http://localhost:8000/#/',
-        //'webpack/hot/only-dev-server',
         ...baseConfig.entry
     ],
 
