@@ -1,5 +1,7 @@
 # Lyef Redux Boilerplate
 
+[![NPM](https://nodei.co/npm/lyef-redux-boilerplate.png?downloads=true)](https://nodei.co/npm/lyef-redux-boilerplate/)
+
 > An opionated structure to create projects using React, Redux and Webpack.
 
 ![Webpack Dashboard for Lyef Redux Boilerplate](images/dashboard.png)
