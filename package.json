@@ -1,6 +1,6 @@
 {
   "name": "lyef-redux-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An opionated structure to create projects using React, Redux and Webpack.",
   "scripts": {
     "start": "npm run dev",
