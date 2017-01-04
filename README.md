@@ -1,6 +1,8 @@
 # Lyef Redux Boilerplate
 
-> An opionated structure to create projects using React and Redux.
+> An opionated structure to create projects using React, Redux and Webpack.
+
+![Webpack Dashboard for Lyef Redux Boilerplate](images/dashboard.png)
 
 ## Getting Started
 
@@ -73,6 +75,7 @@ For now, you can clone this repo or use the [slush generator](https://github.com
 - [Redux](http://redux.js.org/docs/introduction/)
 - [Babel 6](https://babeljs.io/) - Javascript Compiler.
 - [Webpack](https://webpack.github.io/) - Javascript module bundler.
+- [Webpack Dashboard](https://github.com/FormidableLabs/webpack-dashboard)
 - [Eslint](http://eslint.org/) - The pluggable linting utility for JavaScript and JSX.
 - [Husky](https://github.com/typicode/husky) - Git hooks made easy.
 - [Mocha](https://mochajs.org/) - JavaScript test framework.
@@ -84,6 +87,8 @@ For now, you can clone this repo or use the [slush generator](https://github.com
 - [Stylus](http://stylus-lang.com/) - Preprocessor CSS
 - [PostCSS](http://postcss.org/) - A tool for transforming CSS with JavaScript
 
+As you can see, we use a lot of great tools and if you want to see more, take a look at our [package.json](package.json).
+
 ## Contributing
 
 We'd love to have your helping hand on our lyef-redux-boilerplate! See [CONTRIBUTING.md](https://github.com/lyef/lyef-redux-boilerplate/blob/master/CONTRIBUTING.md) for more information on what we're looking for and how to get started.
@@ -91,4 +96,3 @@ We'd love to have your helping hand on our lyef-redux-boilerplate! See [CONTRIBU
 ## License
 
 [MIT License](https://github.com/lyef/lyef-redux-boilerplate/blob/master/LICENSE.md) @ [lyef](https://lyef.github.io)
-

@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-boilerplate",
+  "name": "lyef-redux-boilerplate",
   "version": "0.0.1",
-  "description": "React Redux projects",
+  "description": "An opionated structure to create projects using React, Redux and Webpack.",
   "scripts": {
     "start": "npm run dev",
     "dev": "node -r babel-register ./node_modules/.bin/webpack-dev-server --config ./webpack/dev.js --watch --colors",
