@@ -1,22 +1,70 @@
-# README
+# Lyef Redux Boilerplate
 
-## Instalação
+> An opionated structure to create projects using React and Redux.
 
-Abra o terminal, entre no root do projeto e rode os seguintes comandos.
+## Getting Started
 
+For now, you can clone this repo or use the [slush generator](https://github.com/lyef/slush-lyef-react). We are creating a [CLI](https://github.com/lyef/lyef-react-cli) also.
+
+**You’ll need to have Node >= 4 on your machine.** We recommend to use Node >= 6 and npm >= 3 for faster installation speed and better disk usage.
+
+## Folders and Files
+
+```sh
+├── images
+├── src
+│   ├── actions
+│   ├── components
+│   ├── containers
+│   ├── reducers
+│   ├── services
+│   ├── styles
+│   │   ├── base
+│   │   ├── compoents
+│   │   ├── generic
+│   │   ├── objects
+│   │   ├── settings
+│   │   ├── tools
+│   │   ├── trumps
+│   │   └── style.styl
+│   ├── views
+│   ├── app.js
+│   ├── configureStore.js
+│   ├── constants.js
+│   ├── history.js
+│   ├── root.js
+│   └── routes.js
+├── tests
+│   ├── specs
+│   │   └── views
+│   ├── utils
+│   │   └── helper.js
+│   └── setup.js
+├── webpack
+│   ├── base.js
+│   ├── dev.js
+│   └── prod.js
+├── .babelrc
+├── .editorconfig
+├── .eslintrc
+├── .gitignore
+├── .npmrc
+├── CONTRIBUTING.md
+├── LICENSE.md
+├── README.md
+├── index.html
+└── package.json
 ```
-make
-```
 
-## Comandos
+## Commands
 
-* **npm start**: levanta um servidor de desenvolvimento em [http://localhost:8000](http://localhost:8000)
-* **npm test**: roda os testes
-* **npm run test:tdd**: roda os testes e fica escutando por alteraçõe
-* **npm run lint**: verifica o code style e patterns de react e es6.
-* **npm run lint:fix**: verifica o code style e patterns de react e es6 e corrige coisas simples.
-* **npm run ci**: roda os tests e o lint
-* **npm build**: gera a pasta `dist`, que vai para produção
+* **npm start**: start a server on [http://localhost:8000](http://localhost:8000).
+* **npm test**: run your tests in a single-run mode.
+* **npm run test:tdd**: run and keep watching your test files.
+* **npm run lint**: lint all files searching for errors.
+* **npm run lint:fix**: fix automaticaly some lint errors.
+* **npm run ci**: run tests and lint.
+* **npm build**: build the project at `dist`.
 
 ## Stack
 
@@ -33,6 +81,14 @@ make
 - [Nyc](https://github.com/istanbuljs/nyc) - Istanbul command line interface.
 - [Enzyme](http://airbnb.io/enzyme/) - JavaScript Testing utility for React.
 - [JSDOM](https://github.com/tmpvar/jsdom) - A JavaScript implementation of the WHATWG DOM and HTML standards.
-- [Stylus](http://stylus-lang.com/) - Preprocessor css
+- [Stylus](http://stylus-lang.com/) - Preprocessor CSS
 - [PostCSS](http://postcss.org/) - A tool for transforming CSS with JavaScript
+
+## Contributing
+
+We'd love to have your helping hand on our lyef-redux-boilerplate! See [CONTRIBUTING.md](https://github.com/lyef/lyef-redux-boilerplate/blob/master/CONTRIBUTING.md) for more information on what we're looking for and how to get started.
+
+## License
+
+[MIT License](https://github.com/lyef/lyef-redux-boilerplate/blob/master/LICENSE.md) @ [lyef](https://lyef.github.io)
 
