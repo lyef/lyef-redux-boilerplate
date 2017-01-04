@@ -89,6 +89,12 @@ For now, you can clone this repo or use the [slush generator](https://github.com
 
 As you can see, we use a lot of great tools and if you want to see more, take a look at our [package.json](package.json).
 
+## Code Standarts
+
+This project uses [eslint](http://eslint.org/) and [.editorconfig](http://editorconfig.org/) is defined to have indent_size of **4 spaces**. You can change that on [.eslintrc](https://github.com/lyef/lyef-redux-boilerplate/blob/master/.eslintrc#L16) file.
+
+This project also uses [Husky](https://github.com/typicode/husky) to prevent to push code with lint errors or broken tests. If you don't want this, you can uninstall running `npm uninstall --save-dev husky` and deleting the [prepush command](https://github.com/lyef/lyef-redux-boilerplate/blob/master/package.json#L21) on `package.json`.
+
 ## Contributing
 
 We'd love to have your helping hand on our lyef-redux-boilerplate! See [CONTRIBUTING.md](https://github.com/lyef/lyef-redux-boilerplate/blob/master/CONTRIBUTING.md) for more information on what we're looking for and how to get started.
