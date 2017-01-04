@@ -14,7 +14,7 @@ PAGE);
 
 if (module.hot) {
     module.hot.accept('./root', () => {
-        const NextApp = require('./root').default; // eslint-disable-line
+        const NextApp = require('./root').default; // eslint-disable-line global-require
         ReactDOM.render(
             <AppContainer>
                 <NextApp />
