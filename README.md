@@ -8,7 +8,7 @@
 
 ## Getting Started
 
-For now, you can clone this repo or use the [slush generator](https://github.com/lyef/slush-lyef-react). We are creating a [CLI](https://github.com/lyef/lyef-react-cli) also.
+Just clone this [repository](https://github.com/lyef/lyef-redux-boilerplate) and install everything with `npm install`.
 
 **You’ll need to have Node >= 4 on your machine.** We recommend to use Node >= 6 and npm >= 3 for faster installation speed and better disk usage.
 
