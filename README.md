@@ -34,5 +34,5 @@ make
 - [Enzyme](http://airbnb.io/enzyme/) - JavaScript Testing utility for React.
 - [JSDOM](https://github.com/tmpvar/jsdom) - A JavaScript implementation of the WHATWG DOM and HTML standards.
 - [Stylus](http://stylus-lang.com/) - Preprocessor css
-- [Stylus](http://postcss.org/) - A tool for transforming CSS with JavaScript
+- [PostCSS](http://postcss.org/) - A tool for transforming CSS with JavaScript
 
