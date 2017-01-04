@@ -5,7 +5,8 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "node -r babel-register ./node_modules/.bin/webpack-dev-server --config ./webpack/dev.js --watch --colors",
-    "build": "rimraf dist && NODE_ENV=production node -r babel-register ./node_modules/webpack/bin/webpack --config ./webpack/prod.js --progress --profile --colors",
+    "clean": "rimraf dist",
+    "build": "npm run clean && NODE_ENV=production node -r babel-register ./node_modules/webpack/bin/webpack --config ./webpack/prod.js --progress --profile --colors",
     "test": "NODE_ENV=test ./node_modules/.bin/mocha --require tests/setup.js tests/specs/**/*.spec.js",
     "test:tdd": "npm test -- -w",
     "test:coverage": "NODE_ENV=test ./node_modules/.bin/nyc --reporter=html --reporter=text ./node_modules/.bin/mocha tests/setup.js tests/specs/**/*.spec.js",
@@ -24,6 +25,22 @@
       "**/**/index.js"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lyef/lyef-redux-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "webpack",
+    "boilerplate"
+  ],
+  "author": "lyef (http://lyef.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lyef/lyef-redux-boilerplate/issues"
+  },
+  "homepage": "https://github.com/lyef/lyef-redux-boilerplate#README",
   "devDependencies": {
     "autoprefixer": "^6.3.7",
     "babel-core": "^6.4.5",
@@ -70,12 +87,6 @@
     "webpack-dev-server": "^1.15.1",
     "webpack-hot-middleware": "^2.12.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/guilouro/react-redux-boilerplate.git"
-  },
-  "author": "Guilherme Louro",
-  "private": true,
   "dependencies": {
     "immutable": "^3.8.1",
     "isomorphic-fetch": "^2.2.1",
