@@ -12,7 +12,7 @@ const config = {
 
     output: {
         path: path.join(__dirname, '../', 'dist'),
-        filename: 'js/[name].js',
+        filename: 'js/[name]_[hash].js',
         publicPath: '/',
     },
 
@@ -39,8 +39,8 @@ const config = {
             },
 
             {
-                test: /\.(eot|woff|ttf)$/,
-                loader: 'file-loader?name=/css/fonts/[name].[ext]',
+                test: /\.(eot|woff2?|ttf)$/,
+                loader: 'file-loader?limit=1024&name=/fonts/[name].[ext]',
             },
 
             {
@@ -72,7 +72,7 @@ const config = {
         new HtmlWebpackPlugin({
             template: './index.html',
         }),
-        new ExtractTextPlugin('css/style.css'),
+        new ExtractTextPlugin('css/[name]_[contenthash].css'),
     ],
 };
 
