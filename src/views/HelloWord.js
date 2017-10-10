@@ -1,3 +1,5 @@
 import React from 'react';
 
-export const HelloWord = () => <h1>Hello Word!</h1>;
+const HelloWord = () => <h1>Hello Word!</h1>;
+
+export default HelloWord;

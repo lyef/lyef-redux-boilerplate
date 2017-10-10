@@ -9,7 +9,7 @@ export default function configureStore(baseHistory, initialState) {
 
     const finalCreateStore = compose(
         applyMiddleware(routingMiddleware, thunk, promiseMiddleware()),
-        window.devToolsExtension ? window.devToolsExtension() : f => f
+        window.devToolsExtension ? window.devToolsExtension() : f => f,
     )(createStore);
 
     const store = finalCreateStore(rootReducer, initialState);

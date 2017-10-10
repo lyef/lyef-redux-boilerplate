@@ -1,11 +1,18 @@
 require('babel-register')();
 
-const jsdom = require('jsdom').jsdom;
+const jsdom = require('jsdom');
+
+const { JSDOM } = jsdom;
 
 const exposedProperties = ['window', 'navigator', 'document'];
 
-global.document = jsdom('');
-global.window = document.defaultView;
+const { window } = new JSDOM('');
+const { document } = (new JSDOM('')).window;
+
+global.document = window;
+global.window = document;
+
+
 global.window.localStorage = global.window.sessionStorage = {
     getItem(key) {
         return this[key];

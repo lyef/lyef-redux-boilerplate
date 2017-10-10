@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
-import { HelloWord } from 'views/HelloWord';
+import HelloWord from 'views/HelloWord';
 
 describe('HelloWord - <HelloWord />', () => {
     let wrapper;
