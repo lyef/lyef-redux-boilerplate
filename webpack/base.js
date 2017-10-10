@@ -25,17 +25,14 @@ const config = {
             services: `${rootPath}/services`,
             views: `${rootPath}/views`,
         },
-        extensions: ['.js', '.jsx', '.styl', '.css']
+        extensions: ['.js', '.jsx', '.styl', '.css'],
     },
 
     module: {
         loaders: [
             {
                 test: /\.styl$/,
-                loader: ExtractTextPlugin.extract(
-                    'style-loader',
-                    ['css-loader', 'postcss-loader', 'stylus-loader']
-                ),
+                loader: 'css-loader!stylus-loader',
             },
 
             {
@@ -53,7 +50,7 @@ const config = {
                 loader: 'babel-loader',
                 exclude: [/node_modules/, /src\/styles\/vendor/],
                 query: {
-                    presets: ['es2015', 'react', 'stage-0'],
+                    presets: ['env', 'react', 'stage-0'],
                 },
             },
         ],

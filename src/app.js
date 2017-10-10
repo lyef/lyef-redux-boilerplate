@@ -3,14 +3,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './root';
 
-// import './styles/style.styl';
+
+import './styles/style.styl';
 import { PAGE } from './constants';
 
 ReactDOM.render(
     <AppContainer>
         <Root />
     </AppContainer>,
-    PAGE);
+    PAGE,
+);
 
 if (module.hot) {
     module.hot.accept('./root', () => {
