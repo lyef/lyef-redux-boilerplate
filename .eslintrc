@@ -2,16 +2,21 @@
     "parser": "babel-eslint",
     "extends": "airbnb",
     "env": {
-        "es6": true
-    },
-    "ecmaFeatures": {
-        "modules": true,
-        experimentalObjectRestSpread: true
+        "es6": true,
+        "browser": true
     },
     "settings": {
         "react": {
             "pragma": "React",
-            "version": "15.0"
+            "version": "16.0"
+        },
+        "import/resolver": {
+            "webpack": {
+                "config": "webpack/base.js"
+            },
+            "alias": [
+                ["views", "src/views"]
+            ]
         }
     },
     "rules": {
@@ -33,8 +38,15 @@
         "max-len": [
             "error", 120
         ],
-        "consistent-return": 0,
-        'no-param-reassign': 0,
-        'import/no-unresolved': 0,
+       "react/jsx-filename-extension": 0,
+       "consistent-return": 0,
+       "no-param-reassign": 0,
+       "import/no-unresolved": 0,
+       "import/extensions": ["error", "always", {
+            "js": "never",
+            "jsx": "never"
+        }],
+       "jsx-a11y/href-no-hash": "off",
+       "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
     }
 }

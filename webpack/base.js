@@ -25,7 +25,7 @@ const config = {
             services: `${rootPath}/services`,
             views: `${rootPath}/views`,
         },
-        extensions: ['', '.js', '.jsx', '.styl', '.css']
+        extensions: ['.js', '.jsx', '.styl', '.css']
     },
 
     module: {
@@ -58,16 +58,6 @@ const config = {
             },
         ],
     },
-
-    postcss: () => {
-        return [
-            require('autoprefixer'),
-            require('postcss-discard-duplicates'),
-            require('postcss-discard-unused')(),
-        ];
-    },
-
-
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html',
