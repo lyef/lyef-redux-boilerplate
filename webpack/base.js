@@ -3,8 +3,6 @@ import path from 'path';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const rootPath = path.join(__dirname, '../', 'src');
-
 const config = {
     entry: [
         path.join(__dirname, '../', 'src', 'app'),
@@ -17,14 +15,6 @@ const config = {
     },
 
     resolve: {
-        alias: {
-            components: `${rootPath}/components`,
-            containers: `${rootPath}/containers`,
-            actions: `${rootPath}/actions`,
-            reducers: `${rootPath}/reducers`,
-            services: `${rootPath}/services`,
-            views: `${rootPath}/views`,
-        },
         extensions: ['.js', '.jsx', '.styl', '.css'],
     },
 

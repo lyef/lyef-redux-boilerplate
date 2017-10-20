@@ -13,4 +13,4 @@ describe('HelloWord - <HelloWord />', () => {
     it('should render the view component', () => {
         expect(wrapper.find('h1').text()).to.equal('Hello Word!');
     });
-})
+});

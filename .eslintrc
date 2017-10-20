@@ -11,12 +11,7 @@
             "version": "16.0"
         },
         "import/resolver": {
-            "webpack": {
-                "config": "webpack/base.js"
-            },
-            "alias": [
-                ["views", "src/views"]
-            ]
+            "babel-module": {}
         }
     },
     "rules": {

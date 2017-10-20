@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import HelloWorld from './views/HelloWorld';
+import HelloWorld from 'views/HelloWorld';
 
 // This is a class-based component because the current
 // version of hot reloading won't hot reload a stateless
