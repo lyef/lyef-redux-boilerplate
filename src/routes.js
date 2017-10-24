@@ -7,16 +7,14 @@ import HelloWorld from 'views/HelloWorld';
 // component at the top-level.
 /* eslint-disable react/prefer-stateless-function */
 
-class App extends React.Component {
+class Routes extends React.Component {
     render() {
         return (
-            <div>
-                <Switch>
-                    <Route exact path="/" component={HelloWorld} />
-                </Switch>
-            </div>
+            <Switch>
+                <Route exact path="/" component={HelloWorld} />
+            </Switch>
         );
     }
 }
 
-export default App;
+export default Routes;
