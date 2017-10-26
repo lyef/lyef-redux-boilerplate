@@ -25,9 +25,9 @@ const config = {
                 loader: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: [
-                        { loader: 'css-loader', options: { sourceMap: true } },
-                        { loader: 'postcss-loader', options: { sourceMap: true, importLoaders: 1 } },
-                        { loader: 'stylus-loader', options: { sourceMap: true } }
+                        { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
+                        { loader: 'postcss-loader', options: { sourceMap: true } },
+                        { loader: 'stylus-loader', options: { sourceMap: true } },
                     ],
                 }),
             },
