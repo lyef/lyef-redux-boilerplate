@@ -3,7 +3,7 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 import baseConfig from './base';
 
 const config = {
-    ... baseConfig,
+    ...baseConfig,
 
     plugins: [
         ...baseConfig.plugins,

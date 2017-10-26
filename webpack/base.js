@@ -24,10 +24,16 @@ const config = {
                 test: /\.styl$/,
                 loader: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: [
-                        { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
-                        { loader: 'postcss-loader', options: { sourceMap: true } },
-                        { loader: 'stylus-loader', options: { sourceMap: true } },
+                    use: [{
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true,
+                            importLoaders: 1,
+                            minimize: process.env.NODE_ENV === 'production',
+                        },
+                    },
+                    { loader: 'postcss-loader', options: { sourceMap: true } },
+                    { loader: 'stylus-loader', options: { sourceMap: true } },
                     ],
                 }),
             },
