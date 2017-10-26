@@ -1,9 +1,9 @@
 // https://github.com/michael-ciniawsky/postcss-load-config
 
-module.exports = {
-  "plugins": {
-    "autoprefixer": {},
-    "postcss-discard-duplicates": {},
-    "postcss-discard-unused": {},
-  }
-}
+module.exports = () => ({
+  plugins: [
+    require('autoprefixer')(),
+    require('postcss-combine-duplicated-selectors')({ removeDuplicatedProperties: true }),
+    require('postcss-discard-unused')(),
+  ]
+})
