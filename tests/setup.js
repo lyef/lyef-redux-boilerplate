@@ -1,12 +1,20 @@
 require('babel-register')();
+const enzyme = require('enzyme');
+const Adapter = require('enzyme-adapter-react-16');
+const jsdom = require('jsdom');
 
-const jsdom = require('jsdom').jsdom;
+const { JSDOM } = jsdom;
 
 const exposedProperties = ['window', 'navigator', 'document'];
 
-global.document = jsdom('');
-global.window = document.defaultView;
-global.window.localStorage = global.window.sessionStorage = {
+const { window } = new JSDOM('');
+const { document } = (new JSDOM('')).window;
+
+global.document = window;
+global.window = document;
+
+
+global.window.localStorage = {
     getItem(key) {
         return this[key];
     },
@@ -17,6 +25,9 @@ global.window.localStorage = global.window.sessionStorage = {
         delete this[key];
     },
 };
+
+global.window.localStorage = global.window.sessionStorage;
+
 Object.keys(document.defaultView).forEach((property) => {
     if (typeof global[property] === 'undefined') {
         exposedProperties.push(property);
@@ -27,3 +38,6 @@ Object.keys(document.defaultView).forEach((property) => {
 global.navigator = {
     userAgent: 'node.js',
 };
+
+enzyme.configure({ adapter: new Adapter() });
+

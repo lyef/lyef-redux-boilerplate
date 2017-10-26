@@ -1,13 +1,20 @@
 {
-  "presets": ["es2015", "react", "stage-0"],
+  "presets": ["env", "react", "stage-0"],
   "plugins": [
     "react-hot-loader/babel",
-  ],
-  "env": {
-    "test": {
-      "plugins": [
-        [ "babel-plugin-webpack-alias", { "config": "./webpack/base.js" } ]
-      ]
-    }
-  }
+    ["module-resolver", {
+        "root": ["./"],
+        "extensions": [".js", ".jsx", ".json"],
+        "alias": {
+            "/": "./",
+            "~": "./src",
+            "components": "./src/components",
+            "containers": "./src/containers",
+            "actions": "./src/actions",
+            "reducers": "./src/reducers",
+            "services": "./src/services",
+            "views": "./src/views"
+        }
+    }]
+  ]
 }

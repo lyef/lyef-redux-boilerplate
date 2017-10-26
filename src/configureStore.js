@@ -1,19 +1,21 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import { syncHistoryWithStore, routerMiddleware } from 'react-router-redux';
+import { routerMiddleware } from 'react-router-redux';
+import createHistory from 'history/createBrowserHistory'; // eslint-disable-line import/no-extraneous-dependencies
 import promiseMiddleware from 'redux-promise-middleware';
 import thunk from 'redux-thunk';
 import rootReducer from './reducers';
 
-export default function configureStore(baseHistory, initialState) {
-    const routingMiddleware = routerMiddleware(baseHistory);
+const history = createHistory();
+
+export default function configureStore(initialState) {
+    const reactRouterMiddleware = routerMiddleware(history);
 
     const finalCreateStore = compose(
-        applyMiddleware(routingMiddleware, thunk, promiseMiddleware()),
-        window.devToolsExtension ? window.devToolsExtension() : f => f
+        applyMiddleware(reactRouterMiddleware, thunk, promiseMiddleware()),
+        window.devToolsExtension ? window.devToolsExtension() : f => f,
     )(createStore);
 
     const store = finalCreateStore(rootReducer, initialState);
-    const history = syncHistoryWithStore(baseHistory, store);
 
     if (module.hot) {
         module.hot.accept('./reducers', () => {

@@ -14,7 +14,6 @@ const config = {
         ...baseConfig.entry
     ],
 
-    debug: true,
     devtool: '#inline-source-map',
 
     plugins: [
@@ -28,7 +27,6 @@ const config = {
         hot: true,
         port: '8000',
         inline: true,
-        progress: true,
         historyApiFallback: true,
     }
 }
