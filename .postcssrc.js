@@ -2,8 +2,8 @@
 
 module.exports = {
   "plugins": {
-    "autoprefixer": {}
-    "postcss-discard-duplicates": {}
-    "postcss-discard-unused": {}
+    "autoprefixer": {},
+    "postcss-discard-duplicates": {},
+    "postcss-discard-unused": {},
   }
 }

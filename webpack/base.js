@@ -22,9 +22,15 @@ const config = {
         loaders: [
             {
                 test: /\.styl$/,
-                loader: 'css-loader!stylus-loader',
+                loader: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: [
+                        { loader: 'css-loader', options: { sourceMap: true } },
+                        { loader: 'postcss-loader', options: { sourceMap: true, importLoaders: 1 } },
+                        { loader: 'stylus-loader', options: { sourceMap: true } }
+                    ],
+                }),
             },
-
             {
                 test: /\.(eot|woff2?|ttf)$/,
                 loader: 'file-loader?limit=1024&name=/fonts/[name].[ext]',

@@ -2,8 +2,6 @@ import { AppContainer } from 'react-hot-loader';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './root';
-
-
 import './styles/style.styl';
 import { PAGE } from './constants';
 
