@@ -5,5 +5,6 @@ module.exports = () => ({
     require('autoprefixer')(),
     require('postcss-combine-duplicated-selectors')({ removeDuplicatedProperties: true }),
     require('postcss-discard-unused')(),
+    require("css-mqpacker")(),
   ]
 })

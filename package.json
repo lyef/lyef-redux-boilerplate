@@ -58,6 +58,7 @@
     "copy-to-clipboard": "^3.0.4",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.5",
+    "css-mqpacker": "^6.0.1",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.1",
     "es6-promise": "^4.1.1",
