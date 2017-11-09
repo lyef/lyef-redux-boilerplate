@@ -76,7 +76,7 @@ Just clone this [repository](https://github.com/lyef/lyef-redux-boilerplate) and
 - [React Router](https://github.com/ReactTraining/react-router)
 - [Redux](http://redux.js.org/docs/introduction/)
 - [Babel 6](https://babeljs.io/) - Javascript Compiler.
-- [Webpack](https://webpack.github.io/) - Javascript module bundler.
+- [Webpack](https://webpack.js.org/) - Javascript module bundler.
 - [Webpack Dashboard](https://github.com/FormidableLabs/webpack-dashboard)
 - [Eslint](http://eslint.org/) - The pluggable linting utility for JavaScript and JSX.
 - [Husky](https://github.com/typicode/husky) - Git hooks made easy.
